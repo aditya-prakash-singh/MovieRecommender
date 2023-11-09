@@ -48,3 +48,16 @@ if st.button('Show Recommendation'):
         with columns[i]:
             st.write(recommended_movie_names[i], unsafe_allow_html=True)
             st.image(ab[i])
+
+
+st.write('\n')
+st.write('\n')
+st.write('\n')
+def close():
+    try:
+        pyautogui.hotkey('ctrl', 'w')
+    except:
+        st.write('Error ')
+
+if st.button('Close'):
+    rdb=close()
