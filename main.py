@@ -50,14 +50,3 @@ if st.button('Show Recommendation'):
             st.image(ab[i])
 
 
-st.write('\n')
-st.write('\n')
-st.write('\n')
-def close():
-    try:
-        pyautogui.hotkey('ctrl', 'w')
-    except:
-        st.write('Error ')
-
-if st.button('Close'):
-    rdb=close()
